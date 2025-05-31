@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Fredoka:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/icon.png" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>MEMEs About | Resturant</title>
+  </head>
+  <body>
+    <div
+      class="z-[9999999] w-full bg-black h-20 flex justify-between sm:justify-evenly m-auto px-5 text-white fixed"
+    >
+      <a
+        href="index.html"
+        class="flex flex-row items-center justify-center hover:scale-[1.2] hover:rotate-2 duration-300 transition-all ease-in-out"
+      >
+        <img
+          src="../public/assest/icon.png"
+          alt=""
+          class="z-[1] w-[60px] rounded-full cursor-pointer"
+        />
+        <h1
+          class="z-10 text-2xl font-family-fredoka font-bold italic cursor-pointer"
+        >
+          memes
+        </h1>
+      </a>
+      <div
+        id="menu"
+        class="w-[40px] sm:hidden rotate-0 transition-all duration-700 ease-in flex justify-center items-center cursor-pointer"
+      >
+        <img id="menu-img" src="/public/assest/open-menu.png" alt="menu-logo" />
+      </div>
+            <ul
+        id="mobile-menu"
+        class="absolute text-black hidden opacity-0 top-[80px] left-[5%] w-[90%] rounded-4xl z-[9999] flex-col items-center shadow-2xl justify-between h-fit bg-white"
+      >
+        <li
+          class="cursor-pointer text-xl font-medium font-[Fredoka,sans-serif] font-Fredoka text-center pl-2 py-5 border-b-[1px] w-full hover:text-green-500 hover:text-[22px] transition-all duration-500 ease-in-out"
+        >
+          <a href="/index.html">Home</a>
+        </li>
+        <li
+          class="cursor-pointer text-xl font-medium font-[Fredoka,sans-serif] font-Fredoka text-center pl-2 py-5 border-b-[1px] w-full hover:text-green-500 hover:text-[22px] transition-all duration-500 ease-in-out"
+        >
+          <a href="/menu.html">Menu</a>
+        </li>
+        <li
+          class="cursor-pointer text-xl text-green-400 font-medium font-[Fredoka,sans-serif] font-Fredoka text-center pl-2 py-5 border-b-[1px] w-full hover:text-green-500 hover:text-[22px] transition-all duration-500 ease-in-out"
+        >
+          <a href="sections/about.html">About</a>
+        </li>
+        <li
+          class="cursor-pointer text-xl font-medium font-[Fredoka,sans-serif] font-Fredoka text-center pl-2 py-5 w-full hover:text-green-500 hover:text-[22px] transition-all duration-500 ease-in-out"
+        >
+          <a href="#location">Location</a>
+        </li>
+      </ul>
+      <ul
+        class="sm:flex text-white z-[9999] hidden items-center shadow-2xl gap-5 justify-between"
+      >
+        <li
+          class="cursor-pointer text-xl font-medium hover:translate-y-[-5px] opacity-30 hover:opacity-100 hover:text-blue-400 hover:border-b-2 p-2 transition-all ease-in-out duration-300 font-[Fredoka,sans-serif] font-Fredoka text-center w-full"
+        >
+          <a href="/index.html" target="_blank">Home</a>
+        </li>
+        <li
+          class="cursor-pointer text-xl font-medium hover:translate-y-[-5px] opacity-30 hover:opacity-100 hover:text-blue-400 hover:border-b-2 p-2 transition-all ease-in-out duration-300 font-[Fredoka,sans-serif] font-Fredoka text-center w-full"
+        >
+          <a href="./menu.html" target="_blank">Menu</a>
+        </li>
+        <li
+          class="cursor-pointer text-blue-200 translate-y-[-5px] p-2 border-b-2 text-xl font-medium font-[Fredoka,sans-serif] font-Fredoka text-center w-full"
+        >
+          <a href="./about.html" target="_blank">About</a>
+        </li>
+        <li
+          class="cursor-pointer text-xl font-medium hover:translate-y-[-5px] opacity-30 hover:opacity-100 hover:text-blue-400 hover:border-b-2 p-2 transition-all ease-in-out duration-300 font-[Fredoka,sans-serif] font-Fredoka text-center w-full"
+        >
+          <a href="./index.html#location" target="_blank">Location</a>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="flex flex-col w-full min-h-screen bg-radial-[at_100%_100%] from-zinc-900 to-black to-50%"
+    >
+      <div class="w-fit p-5 h-fit mt-[100px]">
+        <h1
+          class="text-2xl sm:text-4xl font-bold text-blue-400 font-family-ancisar transition-all duration-500 ease-linear"
+        >
+          Welcome to Our Restaurant:
+        </h1>
+        <p class="text-2xl text-white font-family-fredoka p-5">
+          Welcome to [Restaurant Name] — where passion meets flavor. We've been
+          serving handcrafted dishes made with love and local ingredients since
+          [Year]. Born from a love of traditional [Cuisine Type] and modern
+          creativity, we started our journey in a small kitchen, determined to
+          serve real, honest food.
+        </p>
+      </div>
+      <ul class="p-5 flex flex-col gap-2.5">
+        <h1 class="text-2xl sm:text-4xl text-blue-500 font-family-ancisar font-bold">
+          Our Services:
+        </h1>
+        <li class="text-xl sm:text-2xl text-white font-family-fredoka pl-[40px]">
+          <span
+            class="text-cyan-700 font-bold underline hover:scale-105 hover:opacity-80 transition-all duration-500 ease-in-out"
+            >Chill & Enjoy:</span
+          >
+          We offer a relaxing space for you, your friends, and your family.
+          Don't miss the chance — come try it!
+        </li>
+
+        <li class="text-xl sm:text-2xl text-white font-family-fredoka pl-[40px]">
+          <span
+            class="text-orange-500 font-bold underline hover:scale-105 hover:opacity-80 transition-all duration-500 ease-in-out"
+            >Fast Delivery:</span
+          >
+          With our fast delivery, you’ll never stay hungry — In shaa Allah.
+        </li>
+        <li class="text-xl sm:text-2xl text-white font-family-fredoka pl-[40px]">
+          <span
+            class="text-yellow-300 font-bold underline hover:scale-105 hover:opacity-80 transition-all duration-500 ease-in-out"
+            >Serve on Time:</span
+          >
+          Whether it's a plate or sandwich, we serve your food quickly and with
+          care — no long waits!
+        </li>
+        <li class="text-xl sm:text-2xl text-white font-family-fredoka pl-[40px]">
+          <span
+            class="text-red-400 font-bold underline hover:scale-105 hover:opacity-80 transition-all duration-500 ease-in-out"
+            >Open & Close Time:</span
+          >
+          For our amazing customers, we stay open almost all day — 18 hours a
+          day, 7 days a week!
+        </li>
+      </ul>
+      <div>
+        <h1
+          class="text-2xl sm:text-4xl font-bold text-blue-400 font-family-ancisar transition-all duration-500 ease-linear text-center"
+        >
+          Check our accounts for contact:
+        </h1>
+        <div class="w-full flex flex-wrap justify-around p-5 gap-5">
+          <div class="group h-[250px] w-[250px] [perspective:1000px]">
+            <div
+              class="relative h-full w-full rounded-xl shadow-xl [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] transition-all duration-500 ease-in-out"
+            >
+              <div class="absolute inset-0">
+                <img
+                  class="h-full w-full rounded-xl object-cover shadow-[0px_0px_5px_1px] shadow-rose-400"
+                  src="/assest/Instag.jpg"
+                  alt="Instagram Image"
+                />
+              </div>
+              <div
+                class="absolute flex flex-col inset-0 h-ful w-full rounded-xl bg-cyan-400 [transform:rotateY(180deg)] [backface-visibility:hidden]"
+              >
+                <img
+                  class="relative h-full w-full rounded-xl self-start object-contain"
+                  src="/assest/Ins.jpg"
+                  alt=""
+                  />
+                  <a href="https://www.instagram.com/memes_food__?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="absolute top-[calc(63%-20px)] left-[calc(23%-50px)] text-center w-[95%] p-1 rounded-xl bg-blue-600 text-white shadow-[0px_0px_0px_1px] hover:shadow-[0px_0px_5px_1px] transition-all duration-500 ease-in-out shadow-black">Instagram</a></img>
+              </div>
+            </div>
+          </div>
+          <div class="group h-[250px] w-[250px] [perspective:1000px]">
+            <div
+              class="relative h-full w-full rounded-xl shadow-xl [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]  transition-all duration-500 ease-in-out"
+            >
+              <div class="absolute inset-0">
+                <img
+                  class="h-full w-full rounded-xl object-cover shadow-[0px_0px_5px_1px] shadow-indigo-400"
+                  src="/assest/face.jpg"
+                  alt="Instagram Image"
+                />
+              </div>
+              <div
+                class="absolute flex flex-col inset-0 h-ful w-full rounded-xl bg-cyan-400 [transform:rotateY(180deg)] [backface-visibility:hidden]"
+              >
+                <img
+                  class="relative h-full w-full rounded-xl self-start object-contain"
+                  src="/assest/fab.jpg"
+                  alt=""
+                  />
+                  <a href="https://www.facebook.com/Memesfood20#" target="_blank" class="absolute top-[calc(75%-20px)] left-[calc(23%-50px)] text-center w-[95%] p-1 rounded-xl bg-blue-600 text-white shadow-[0px_0px_0px_1px] hover:shadow-[0px_0px_5px_1px] transition-all duration-500 ease-in-out shadow-black">Facebook</a></img>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full h-fit mt-[50px]">
+        <h1 class="text-center text-white sm:text-4xl text-3xl mb-2.5">Reviews:</h1>
+        <div class=" flex flex-row flex-wrap justify-around items-start p-2.5 gap-2.5">
+          <div class="bling opacity-0 group gap-5 shadow-blue-400 shadow-xs hover:shadow-[0px_0px_4px_1px] transition-all duration-500 ease-in-out hover:bg-indigo-400 w-[350px] h-[200px] flex flex-row  justify-around items-center bg-white rounded-tl-2xl rounded-br-2xl p-2.5">
+            <div class="w-[50px] rounded-full self-start pt-5">
+              <img  src="/public/assest/unnamed.png" alt="customerPng">
+            </div>
+            <div class="flex flex-col w-fit h-fit gap-1.5">
+              <h1 class="text-2xl text-indigo-400 group-hover:text-black transition-all duration-500 ease-in-out font-family-ancisar text-bold">Ababou Abdelatif</h1>
+              <p class="text-sm text-gray-500 group-hover:text-black transition-all duration-500 ease-in-out">Un très bon accueil. Des plats délicieux.  Je recommande vraiment ❤</p>
+              <div class="flex flex-row justify-items-start items-center gap-1">
+                <img class="w-[20px]" src="/public/assest/golds.png" alt="Stars">
+                <img class="w-[20px]" src="/public/assest/golds.png" alt="Stars">
+                <img class="w-[20px]" src="/public/assest/golds.png" alt="Stars">
+                <img class="w-[20px]" src="/public/assest/golds.png" alt="Stars">
+                <img class="w-[20px]" src="/public/assest/golds.png" alt="Stars">
+              </div>
+            </div>
+          </div>
+          <div class="bling opacity-0 group gap-5 shadow-blue-400 shadow-xs hover:shadow-[0px_0px_4px_1px] transition-all duration-500 ease-in-out hover:bg-indigo-400 w-[350px] h-[200px] flex flex-row  justify-around items-center bg-white rounded-tl-2xl rounded-br-2xl p-2.5">
+            <div class="w-[50px] rounded-full self-start pt-5">
+              <img  src="/public/assest/unnamedt.png" alt="customerPng">
+            </div>
+            <div class="flex flex-col w-fit h-fit gap-1.5">
+              <h1 class="text-2xl text-indigo-400 group-hover:text-black transition-all duration-500 ease-in-out font-mono text-bold">F A R M A J A</h1>
+              <p class="text-sm text-gray-500 group-hover:text-black transition-all duration-500 ease-in-out">Magnifique
+Cuisine : 5
+Service : 5
+Ambiance : 4</p>
+              <div class="flex flex-row justify-items-start items-center gap-1">
+                <img class="w-[20px]" src="/public/assest/golds.png" alt="Stars">
+                <img class="w-[20px]" src="/public/assest/golds.png" alt="Stars">
+                <img class="w-[20px]" src="/public/assest/golds.png" alt="Stars">
+                <img class="w-[20px]" src="/public/assest/golds.png" alt="Stars">
+                <img class="w-[20px]" src="/public/assest/golds.png" alt="Stars">
+              </div>
+            </div>
+          </div>
+          <div class="bling opacity-0 group gap-5 shadow-blue-400 shadow-xs hover:shadow-[0px_0px_4px_1px] transition-all duration-500 ease-in-out hover:bg-indigo-400 w-[350px] h-[200px] flex flex-row  justify-around items-center bg-white rounded-tl-2xl rounded-br-2xl p-2.5">
+            <div class="w-[50px] rounded-full self-start pt-5">
+              <img  src="/public/assest/unnameda.png" alt="customerPng">
+            </div>
+            <div class="flex flex-col w-fit h-fit gap-1.5">
+              <h1 class="text-2xl text-indigo-400 group-hover:text-black transition-all duration-500 ease-in-out  text-bold">a ptgh</h1>
+              <p class="text-sm text-gray-500 group-hover:text-black transition-all duration-500 ease-in-out"><span class="text-bold">Service:</span>Repas sur place,
+<span class="text-bold">Type de repas:</span>Petit-déjeuner,
+<span class="text-bold">Prix par personne:</span>1–1 000 DZD,
+<span class="text-bold">Cuisine:</span> 4,<span class="text-bold">Service:</span> 5,<span class="text-bold">Ambiance:</span> 5</p>
+              <div class="flex flex-row justify-items-start items-center gap-1">
+                <img class="w-[20px]" src="/public/assest/golds.png" alt="Stars">
+                <img class="w-[20px]" src="/public/assest/golds.png" alt="Stars">
+                <img class="w-[20px]" src="/public/assest/golds.png" alt="Stars">
+                <img class="w-[20px]" src="/public/assest/golds.png" alt="Stars">
+                <img class="w-[20px]" src="/public/assest/golds.png" alt="Stars">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="w-full h-fit p-2.5 text-xl font-bold text-white text-center mt-[50px]">Copy Rights &copy; <a href="index.html" class="text-blue-200 hover:text-green-400 duration-500 transition-all ease-in-out font-family-fredoka">memes</a></footer>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/app.js"></script>
+  </body>
+</html>

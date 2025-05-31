@@ -1,0 +1,1802 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Fredoka:wght@300..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Fredoka:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/icon.png" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>MEMEs Menu | Resturant</title>
+  </head>
+  <body
+    class="h-full min-h-screen bg-radial-[at_20%_50%] from-zinc-900 to-black to-100%"
+  >
+    <div
+      class="z-[9999999] w-full bg-black h-20 flex justify-between sm:justify-evenly m-auto px-5 text-white fixed"
+    >
+      <a
+        href="index.html"
+        class="flex flex-row items-center justify-center hover:scale-[1.2] hover:rotate-2 duration-300 transition-all ease-in-out"
+      >
+        <img
+          src="../public/assest/icon.png"
+          alt=""
+          class="z-[1] w-[60px] rounded-full cursor-pointer"
+        />
+        <h1
+          class="z-10 text-2xl font-family-fredoka font-bold italic cursor-pointer"
+        >
+          memes
+        </h1>
+      </a>
+      <div
+        id="menu"
+        class="w-[40px] sm:hidden rotate-0 transition-all duration-700 ease-in flex justify-center items-center cursor-pointer"
+      >
+        <img id="menu-img" src="/public/assest/open-menu.png" alt="menu-logo" />
+      </div>
+      <ul
+        id="mobile-menu"
+        class="absolute text-black hidden opacity-0 top-[80px] left-[5%] w-[90%] rounded-4xl z-[9999] flex-col items-center shadow-2xl justify-between h-fit bg-white"
+      >
+        <li
+          class="cursor-pointer text-xl font-medium font-[Fredoka,sans-serif] font-Fredoka text-center pl-2 py-5 border-b-[1px] w-full hover:text-green-500 hover:text-[22px] transition-all duration-500 ease-in-out"
+        >
+          <a href="/index.html" target="_blank">Home</a>
+        </li>
+        <li
+          class="cursor-pointer text-xl text-green-400 font-medium font-[Fredoka,sans-serif] font-Fredoka text-center pl-2 py-5 border-b-[1px] w-full hover:text-green-500 hover:text-[22px] transition-all duration-500 ease-in-out"
+        >
+          <a href="./menu.html" target="_blank">Menu</a>
+        </li>
+        <li
+          class="cursor-pointer text-xl font-medium font-[Fredoka,sans-serif] font-Fredoka text-center pl-2 py-5 w-full hover:text-green-500 hover:text-[22px] transition-all duration-500 ease-in-out"
+        >
+          <a href="./about.html" target="_blank">About</a>
+        </li>
+        <li
+          class="cursor-pointer text-xl font-medium font-[Fredoka,sans-serif] font-Fredoka text-center pl-2 py-5 w-full hover:text-green-500 hover:text-[22px] transition-all duration-500 ease-in-out"
+        >
+          <a href="/index.html#location" target="_blank">Location</a>
+        </li>
+      </ul>
+      <ul
+        class="sm:flex text-white z-[9999] hidden items-center shadow-2xl gap-5 justify-between"
+      >
+        <li
+          class="cursor-pointer text-xl font-medium hover:translate-y-[-5px] opacity-30 hover:opacity-100 hover:text-blue-400 hover:border-b-2 p-2 transition-all ease-in-out duration-300 font-[Fredoka,sans-serif] font-Fredoka text-center w-full"
+        >
+          <a href="/index.html" target="_blank">Home</a>
+        </li>
+        <li
+          class="cursor-pointer text-blue-200 translate-y-[-5px] p-2 border-b-2 text-xl font-medium font-[Fredoka,sans-serif] font-Fredoka text-center w-full"
+        >
+          <a href="./menu.html" target="_blank">Menu</a>
+        </li>
+        <li
+          class="cursor-pointer text-xl font-medium hover:translate-y-[-5px] opacity-30 hover:opacity-100 hover:text-blue-400 hover:border-b-2 p-2 transition-all ease-in-out duration-300 font-[Fredoka,sans-serif] font-Fredoka text-center w-full"
+        >
+          <a href="/sections/about.html" target="_blank">About</a>
+        </li>
+        <li
+          class="cursor-pointer text-xl font-medium hover:translate-y-[-5px] opacity-30 hover:opacity-100 hover:text-blue-400 hover:border-b-2 p-2 transition-all ease-in-out duration-300 font-[Fredoka,sans-serif] font-Fredoka text-center w-full"
+        >
+          <a href="/index.html#location" target="_blank">Location</a>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="relative flex flex-row flex-wrap-reverse justify-around items-center w-full h-fit md:h-screen pt-[80px] pb-[50px] bg-[url('/public/assest/menbg.jpg')] bg-cover bg-center"
+    >
+      <div
+        class="w-[50%] min-w-[350px] h-full sm:p-5 flex flex-col justify-center gap-5 items-center"
+      >
+        <div
+          class="w-full h-fit flex flex-col justify-start gap-2.5 items-center"
+        >
+          <h1
+            id="menu-tit"
+            class="text-6xl text-white font-family-fredoka font-bold self-start transition-all duration-500 ease-in-out animate-bingo"
+          >
+            Pizza Marguerite
+          </h1>
+          <p
+            id="menu-dsc"
+            class="text-white font-family-fredoka text-[12px] sm:text-[16px] transition-all duration-500 ease-in-out animate-bingo"
+          >
+            A delicious classic made with rich tomato sauce, black olives, and
+            melted cheese. Simple, tasty, and satisfying — all for just 300 DA!
+          </p>
+        </div>
+        <div
+          class="w-full h-fit md:p-2.5 flex flex-row flex-wrap justify-around"
+        >
+          <a
+            href="tel:+213542762314"
+            class="w-[130px] sm:w-[150px] text-sm sm:text-[18px] text-center text-white font-family-fredoka shadow-white shadow-[0px_0px_4px_1px] py-2 px-2.5 rounded-[20px] bg-red-500 flex items-center justify-evenly hover:shadow-[0px_0px_8px_4px] hover:bg-red-400 hover:text-amber-400 transition-all duration-500 ease-in-out"
+            ><i class="fa-solid fa-phone text-sm"></i>Oreder Now</a
+          >
+          <a
+            href="#discover"
+            class="w-[130px] sm:w-[150px] text-sm sm:text-[18px] text-center text-white font-family-fredoka shadow-white shadow-[0px_0px_4px_1px] py-2 px-2.5 rounded-[20px] bg-red-500 cursor-pointer flex items-center justify-evenly hover:shadow-[0px_0px_8px_4px] hover:bg-red-400 hover:text-amber-400 transition-all duration-500 ease-in-out"
+          >
+            <i class="fa-solid fa-magnifying-glass text-sm"></i>Discover More
+          </a>
+        </div>
+      </div>
+      <div
+        class="w-[50%] min-w-[350px] h-full sm:p-5 flex justify-center items-center"
+      >
+        <div
+          class="w-full h-full bg-[url('/public/assest/plat.png')] bg-no-repeat bg-center bg-size-[430px] md:bg-size-[500px] flex justify-center items-center transition-all ease-in-out duration-500"
+        >
+          <img
+            id="menuPng"
+            class="w-[300px] transition-all duration-500 ease-in-out animate-bingo"
+            src="/public/assest/margurite.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div
+        class="absolute bottom-5 left-[40%] sm:left-[45%] md:left-[50%] w-fit h-fit flex flex-row flex-nowrap gap-2.5 translate-[-50%,-50%]"
+      >
+        <div
+          class="currentt w-[10px] h-[10px] rounded-full bg-emerald-400"
+        ></div>
+        <div class="currentt w-[10px] h-[10px] rounded-full bg-white"></div>
+        <div class="currentt w-[10px] h-[10px] rounded-full bg-white"></div>
+        <div class="currentt w-[10px] h-[10px] rounded-full bg-white"></div>
+      </div>
+    </div>
+    <div
+      id="discover"
+      class="scroll-mt-[100px] w-full h-screen p-2.5 flex flex-col mt-[50px]"
+    >
+      <h1 class="text-4xl text-white font-family-josefin text-center">
+        Our Menu:
+      </h1>
+      <div
+        class="w-full h-fit p-2.5 flex flex-wrap justify-around gap-2.5 mb-5"
+      >
+        <button
+          id="All"
+          class="btns opacity-100 w-[140px] h-fit p-2.5 text-sm text-white bg-rose-600 font-family-fredoka rounded-3xl cursor-pointer shadow-2xs shadow-white transition-all duration-500 ease-in-out hover:shadow-lg hover:bg-red-400 hover:text-green-400"
+        >
+          All
+        </button>
+        <button
+          id="lebanese"
+          class="btns w-[140px] h-fit p-2.5 opacity-50 hover:opacity-100 text-sm text-white bg-rose-600 font-family-fredoka rounded-3xl cursor-pointer shadow-2xs shadow-white transition-all duration-500 ease-in-out hover:shadow-lg hover:bg-red-400 hover:text-green-400"
+        >
+          Lebanese
+        </button>
+        <button
+          id="burger"
+          class="btns w-[140px] h-fit p-2.5 opacity-50 hover:opacity-100 text-sm text-white bg-rose-600 font-family-fredoka rounded-3xl cursor-pointer shadow-2xs shadow-white transition-all duration-500 ease-in-out hover:shadow-lg hover:bg-red-400 hover:text-green-400"
+        >
+          Burger
+        </button>
+        <button
+          id="pizza"
+          class="btns w-[140px] h-fit p-2.5 opacity-50 hover:opacity-100 text-sm text-white bg-rose-600 font-family-fredoka rounded-3xl cursor-pointer shadow-2xs shadow-white transition-all duration-500 ease-in-out hover:shadow-lg hover:bg-red-400 hover:text-green-400"
+        >
+          Pizza
+        </button>
+        <button
+          id="matloue"
+          class="btns w-[140px] h-fit p-2.5 opacity-50 hover:opacity-100 text-sm text-white bg-rose-600 font-family-fredoka rounded-3xl cursor-pointer shadow-2xs shadow-white transition-all duration-500 ease-in-out hover:shadow-lg hover:bg-red-400 hover:text-green-400"
+        >
+          Maltou3
+        </button>
+        <button
+          id="panini"
+          class="btns w-[140px] h-fit p-2.5 opacity-50 hover:opacity-100 text-sm text-white bg-rose-600 font-family-fredoka rounded-3xl cursor-pointer shadow-2xs shadow-white transition-all duration-500 ease-in-out hover:shadow-lg hover:bg-red-400 hover:text-green-400"
+        >
+          Panini
+        </button>
+        <button
+          id="tacos"
+          class="btns w-[140px] h-fit p-2.5 opacity-50 hover:opacity-100 text-sm text-white bg-rose-600 font-family-fredoka rounded-3xl cursor-pointer shadow-2xs shadow-white transition-all duration-500 ease-in-out hover:shadow-lg hover:bg-red-400 hover:text-green-400"
+        >
+          Tacos
+        </button>
+      </div>
+      <div
+        class="w-full h-fit flex flex-wrap justify-center gap-2.5 items-center"
+      >
+        <!-- Burger -->
+        <div
+          class="relative all burgers w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            250 Da
+          </h4>
+          <div>
+            <img
+              class="w-[150px]"
+              src="/public/assest/burgerSimple.png"
+              alt="burger-simple-png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Burger Simple
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              sc biggy, onion, salade, tomate, VH, fruits
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+        <div
+          class="relative all burgers w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            250 Da
+          </h4>
+          <div>
+            <img
+              class="w-[150px]"
+              src="/public/assest/burgerSimple.png"
+              alt="burger-simple-png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Burger Classic
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              viande double, omelette, frites
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+        <div
+          class="relative all burgers w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            250 Da
+          </h4>
+          <div>
+            <img
+              class="w-[150px]"
+              src="/public/assest/burgerSimple.png"
+              alt="burger-simple-png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Chiken Burger
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              chiken, frites, salade
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+        <div
+          class="relative all burgers w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            250 Da
+          </h4>
+          <div>
+            <img
+              class="w-[150px]"
+              src="/public/assest/burgerSimple.png"
+              alt="burger-simple-png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Normand Burger
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              sc biggy, onion, tomate, VH, frites + camambert
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+        <div
+          class="relative all burgers w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            250 Da
+          </h4>
+          <div>
+            <img
+              class="w-[150px]"
+              src="/public/assest/burgerSimple.png"
+              alt="burger-simple-png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Cheese Burger
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              viande, omelette, frites, gouda
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+        <div
+          class="relative all burgers w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            250 Da
+          </h4>
+          <div>
+            <img
+              class="w-[150px]"
+              src="/public/assest/burgerSimple.png"
+              alt="burger-simple-png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Burger Panne
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              pin sauce biggy, onion, salade, tomate, poulet panne, sc fromage
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+        <!-- PANINI -->
+        <div
+          class="relative all panini w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            250 Da
+          </h4>
+          <div>
+            <img
+              class="w-[150px]"
+              src="/public/assest/panini.png"
+              alt="Panini Kebab-png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Panini Kebab
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              kebab, frites, fromage
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+        <div
+          class="relative all panini w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            250 Da
+          </h4>
+          <div>
+            <img
+              class="w-[150px]"
+              src="/public/assest/panini.png"
+              alt="Panini VH-png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Panini VH
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              viandhachee, frites, fromage
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+        <div
+          class="relative all panini w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            250 Da
+          </h4>
+          <div>
+            <img
+              class="w-[150px]"
+              src="/public/assest/panini.png"
+              alt="Panini Kebda-png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Panini Kebda
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              kebda, frites
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+        <div
+          class="relative all panini w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            250 Da
+          </h4>
+          <div>
+            <img
+              class="w-[150px]"
+              src="/public/assest/panini.png"
+              alt="Panini Mix-png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Panini Mix
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              viande, kebab, frites, fromage
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+        <div
+          class="relative all panini w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            250 Da
+          </h4>
+          <div>
+            <img
+              class="w-[150px]"
+              src="/public/assest/panini.png"
+              alt="Panini Melange-png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Panini Melange
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              kebab, kebda, frites, fromage
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+        <div
+          class="relative all panini w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            250 Da
+          </h4>
+          <div>
+            <img
+              class="w-[150px]"
+              src="/public/assest/panini.png"
+              alt="Panini AuFour-png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Panini AuFour
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              viande, frites, 3fromage
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+        <!-- PIZZA -->
+        <div
+          class="relative all pizza w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            300 Da
+          </h4>
+          <div>
+            <img
+              class="w-[150px]"
+              src="/public/assest/margurite.png"
+              alt="Pizza Margurite-png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Pizza Margurite
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              sauce tomate, olive, fromage
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+        <div
+          class="relative all pizza w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            350 Da
+          </h4>
+          <div>
+            <img
+              class="w-[150px]"
+              src="/public/assest/napotilien.png"
+              alt="Pizza Napolitaine-png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Pizza Napolitaine
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              sauce tomate, fromage, olive, viandhachee
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+        <div
+          class="relative all pizza w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            450 Da
+          </h4>
+          <div>
+            <img
+              class="w-[150px]"
+              src="/public/assest/thon.png"
+              alt="Pizza Thon-png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Pizza Thon
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              sauce tomate, fromage, olive, thon
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+        <div
+          class="relative all pizza w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            450 Da
+          </h4>
+          <div>
+            <img
+              class="w-[180px]"
+              src="/public/assest/vegetarien.png"
+              alt="Pizza Vegetariene-png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Pizza Vegetariene
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              sauce tomate, olive, fromage, champinion, poivron
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+        <div
+          class="relative all pizza w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            450 Da
+          </h4>
+          <div>
+            <img
+              class="w-[150px]"
+              src="/public/assest/poulet.png"
+              alt="pizza-poulet-png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Pizza Poulet
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              sauce tomate, olive, fromage, poulet
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+        <div
+          class="relative all pizza w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            600 Da
+          </h4>
+          <div>
+            <img
+              class="w-[150px]"
+              src="/public/assest/fromage4.png"
+              alt="pizza-quatreF-png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Pizza 4 Fromage
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              sauce blanch, chedar, gouda, gruyre, camembert
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+        <div
+          class="relative all pizza w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            500 Da
+          </h4>
+          <div>
+            <img
+              class="w-[150px]"
+              src="/public/assest/mexican.png"
+              alt="Pizza Mexican-png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Pizza Mexican
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              sauce mexican, creme fraiche, VH, poiven
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+        <div
+          class="relative all pizza w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            800 Da
+          </h4>
+          <div>
+            <img
+              class="w-[150px]"
+              src="/public/assest/loli.gif"
+              alt="Memes-png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Pizza Memes
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              secret de chef
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+        <!-- Tacos -->
+        <div
+          class="relative all tacos w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            450 Da
+          </h4>
+          <div>
+            <img
+              class="w-[150px]"
+              src="/public/assest/tacosy.png"
+              alt="Tacos Kebab png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Tacos Kebab
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              kebab, 3 fromage
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+        <div
+          class="relative all tacos w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            500 Da
+          </h4>
+          <div>
+            <img
+              class="w-[150px]"
+              src="/public/assest/tacosy.png"
+              alt="Tacos VH png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Tacos VH
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              Viandehachee, 3fromage
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+        <div
+          class="relative all tacos w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            500 Da
+          </h4>
+          <div>
+            <img
+              class="w-[150px]"
+              src="/public/assest/tacosy.png"
+              alt="Tacos Escalope png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Tacos Escalope
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              escalope, 3fromage
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+        <div
+          class="relative all tacos w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            500 Da
+          </h4>
+          <div>
+            <img
+              class="w-[150px]"
+              src="/public/assest/tacosy.png"
+              alt="Tacos Kebda png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Tacos Kebda
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              Kebda, 3fromage
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+        <div
+          class="relative all tacos w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            550 Da
+          </h4>
+          <div>
+            <img
+              class="w-[150px]"
+              src="/public/assest/tacosy.png"
+              alt="Tacos Mix png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Tacos Mix
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              viande, kebab, 3fromage
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+        <div
+          class="relative all tacos w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            500 Da
+          </h4>
+          <div>
+            <img
+              class="w-[150px]"
+              src="/public/assest/tacosy.png"
+              alt="Tacos Panner png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Tacos Panner
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              viande, kebab, 3fromage
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+        <div
+          class="relative all tacos w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            800 Da
+          </h4>
+          <div>
+            <img
+              class="w-[150px]"
+              src="/public/assest/tacosy.png"
+              alt="Tacos Xl png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Tacos Xl
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              viande, 4fromage
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+        <div
+          class="relative all tacos w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            600 Da
+          </h4>
+          <div>
+            <img
+              class="w-[150px]"
+              src="/public/assest/tacosy.png"
+              alt="Tacos Gratine png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Tacos Gratine
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              viande, 4fromage
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+        <div
+          class="relative all tacos w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            900 Da
+          </h4>
+          <div>
+            <img
+              class="w-[150px]"
+              src="/public/assest/tacosy.png"
+              alt="Tacos XL Gratine png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Tacos XL-Gratine
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              kebab, 3fromage
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+        <!-- Matlou3 -->
+        <div
+          class="relative all matlou3 w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            200 Da
+          </h4>
+          <div>
+            <img
+              class="w-[130px]"
+              src="/public/assest/matlouaa.png"
+              alt="Matlou3a Kebab png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Matlou3a Kebab
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              kebab, frites
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+        <div
+          class="relative all matlou3 w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            200 Da
+          </h4>
+          <div>
+            <img
+              class="w-[130px]"
+              src="/public/assest/matlouaa.png"
+              alt="Matlou3a VH png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Matlou3a VH
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              viande hachee, frites, omelette
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+        <div
+          class="relative all matlou3 w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            250 Da
+          </h4>
+          <div>
+            <img
+              class="w-[130px]"
+              src="/public/assest/matlouaa.png"
+              alt="Matlou3a Kebda png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Matlou3a Kebda
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              Kebda, frites
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+        <div
+          class="relative all matlou3 w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            250 Da
+          </h4>
+          <div>
+            <img
+              class="w-[130px]"
+              src="/public/assest/matlouaa.png"
+              alt="Matlou3a Mix png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Matlou3a Mix
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              viande, kebab, frites
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+        <div
+          class="relative all matlou3 w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            250 Da
+          </h4>
+          <div>
+            <img
+              class="w-[130px]"
+              src="/public/assest/matlouaa.png"
+              alt="Matlou3a Melange png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Matlou3a Melange
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              kebab, kebda, frites
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+        <div
+          class="relative all matlou3 w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            400 Da
+          </h4>
+          <div>
+            <img
+              class="w-[130px]"
+              src="/public/assest/matlouaa.png"
+              alt="Matlou3a AuFour png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Matlou3a Memes
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              viande, frites, 3formage
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+        <!-- Lebanese -->
+        <div
+          class="relative all lebanese w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            350 Da
+          </h4>
+          <div>
+            <img
+              class="w-[110px]"
+              src="/public/assest/Lebanese.png"
+              alt="Lebanese Kabab png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Lebanese Kabab
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              kebab, frites, fromage
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+        <div
+          class="relative all lebanese w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            350 Da
+          </h4>
+          <div>
+            <img
+              class="w-[110px]"
+              src="/public/assest/Lebanese.png"
+              alt="Lebanese VH png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Lebanese VH
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              viande hachee, frites, fromage
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+        <div
+          class="relative all lebanese w-[250px] h-[320px] p-2.5 flex flex-col justify-around bg-gray-950 rounded-[23px] items-center"
+        >
+          <h4
+            class="absolute top-5 left-5 font-bold text-xl text-white font-family-ancisar"
+          >
+            350 Da
+          </h4>
+          <div>
+            <img
+              class="w-[110px]"
+              src="/public/assest/Lebanese.png"
+              alt="Lebanese Escalope png"
+            />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col items-center justify-center gap-1"
+          >
+            <h4 class="text-[25px] text-white font-family-josefin font-bold">
+              Lebanese Escalope
+            </h4>
+            <p class="text-gray-400 text-xs font-family-fredoka">
+              Escalope, frites, fromage
+            </p>
+          </div>
+          <a
+            href="tel:+213542762314"
+            class="group hover:text-black hover:shadow-[0px_0px_9px_5px] transition-all duration-500 ease-in-out hover:bg-cyan-200 w-[200px] h-fit px-2.5 py-1.5 text-white font-family-josefin font-bold text-[16px] flex justify-evenly bg-orange-400 items-center rounded-3xl flex-nowrap shadow-white shadow-[0px_0px_4px_1px]"
+            ><i
+              class="fa-solid fa-phone text-sm text-white group-hover:text-black transition-all duration-500 ease-in-out"
+            ></i
+            >Oreder Now</a
+          >
+        </div>
+      </div>
+      <div class="w-[90%] mx-auto h-fit bg-amber-100 rounded-2xl my-[50px]">
+        <h2 class="text-4xl m-5 text-amber-900 font-family-josefin font-bold">
+          Supplements
+        </h2>
+        <div class="flex flex-wrap justify-center gap-2.5 items-center">
+          <div
+            class="bg-white rounded-2xl items-center flex flex-col justify-evenly shadow-md shadow-black w-[200px] m-5 h-[200px] p-5 transition-all ease-in-out duration-500 group hover:scale-110 hover:bg-amber-400"
+          >
+            <img
+              class="w-[80px]"
+              src="/public/assest/cheddar.png"
+              alt="cheddar"
+            />
+            <h4
+              class="text-2xl text-center text-gray-900 font-family-fredoka font-bold"
+            >
+              Cheddar
+            </h4>
+            <div
+              class="w-full h-fit p-1.5 flex flex-nowrap justify-center items-center gap-2.5"
+            >
+              <h5
+                class="text-lg text-gray-950 font-bold font-family-fredoka group-hover:text-cyan-600 group-hover:scale-110 transition-all duration-500 ease-in-out"
+              >
+                Price:
+              </h5>
+              <span
+                class="text-lg text-amber-400 group-hover:text-white group-hover:-rotate-12 group-hover:scale-110 font-family-ancisar font-bold transition-all duration-500 ease-in-out"
+                >100 Da</span
+              >
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-2xl items-center flex flex-col justify-evenly shadow-md shadow-black w-[200px] m-5 h-[200px] p-5 transition-all ease-in-out duration-500 group hover:scale-110 hover:bg-amber-400"
+          >
+            <img class="w-[80px]" src="/public/assest/gouda.png" alt="gouda" />
+            <h4
+              class="text-2xl text-center text-gray-900 font-family-fredoka font-bold"
+            >
+              Gouda
+            </h4>
+            <div
+              class="w-full h-fit p-1.5 flex flex-nowrap justify-center items-center gap-2.5"
+            >
+              <h5
+                class="text-lg text-gray-950 font-bold font-family-fredoka group-hover:text-cyan-600 group-hover:scale-110 transition-all duration-500 ease-in-out"
+              >
+                Price:
+              </h5>
+              <span
+                class="text-lg text-amber-400 group-hover:text-white group-hover:-rotate-12 group-hover:scale-110 font-family-ancisar font-bold transition-all duration-500 ease-in-out"
+                >100 Da</span
+              >
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-2xl items-center flex flex-col justify-evenly shadow-md shadow-black w-[200px] m-5 h-[200px] p-5 transition-all ease-in-out duration-500 group hover:scale-110 hover:bg-amber-400"
+          >
+            <img
+              class="w-[100px]"
+              src="/public/assest/camambert.png"
+              alt="camambert"
+            />
+            <h4
+              class="text-2xl text-center text-gray-900 font-family-fredoka font-bold"
+            >
+              Camambert
+            </h4>
+            <div
+              class="w-full h-fit p-1.5 flex flex-nowrap justify-center items-center gap-2.5"
+            >
+              <h5
+                class="text-lg text-gray-950 font-bold font-family-fredoka group-hover:text-cyan-600 group-hover:scale-110 transition-all duration-500 ease-in-out"
+              >
+                Price:
+              </h5>
+              <span
+                class="text-lg text-amber-400 group-hover:text-white group-hover:-rotate-12 group-hover:scale-110 font-family-ancisar font-bold transition-all duration-500 ease-in-out"
+                >100 Da</span
+              >
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-2xl items-center flex flex-col justify-evenly shadow-md shadow-black w-[200px] m-5 h-[200px] p-5 transition-all ease-in-out duration-500 group hover:scale-110 hover:bg-amber-400"
+          >
+            <img
+              class="w-[100px]"
+              src="/public/assest/gruyre.png"
+              alt="gruyre"
+            />
+            <h4
+              class="text-2xl text-center text-gray-900 font-family-fredoka font-bold"
+            >
+              gruyre
+            </h4>
+            <div
+              class="w-full h-fit p-1.5 flex flex-nowrap justify-center items-center gap-2.5"
+            >
+              <h5
+                class="text-lg text-gray-950 font-bold font-family-fredoka group-hover:text-cyan-600 group-hover:scale-110 transition-all duration-500 ease-in-out"
+              >
+                Price:
+              </h5>
+              <span
+                class="text-lg text-amber-400 group-hover:text-white group-hover:-rotate-12 group-hover:scale-110 font-family-ancisar font-bold transition-all duration-500 ease-in-out"
+                >150 Da</span
+              >
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-2xl items-center flex flex-col justify-evenly shadow-md shadow-black w-[200px] m-5 h-[200px] p-5 transition-all ease-in-out duration-500 group hover:scale-110 hover:bg-amber-400"
+          >
+            <img
+              class="w-[100px]"
+              src="/public/assest/bordure.png"
+              alt="gruyre"
+            />
+            <h4
+              class="text-2xl text-center text-gray-900 font-family-fredoka font-bold"
+            >
+              Bordure au F
+            </h4>
+            <div
+              class="w-full h-fit p-1.5 flex flex-nowrap justify-center items-center gap-2.5"
+            >
+              <h5
+                class="text-lg text-gray-950 font-bold font-family-fredoka group-hover:text-cyan-600 group-hover:scale-110 transition-all duration-500 ease-in-out"
+              >
+                Price:
+              </h5>
+              <span
+                class="text-lg text-amber-400 group-hover:text-white group-hover:-rotate-12 group-hover:scale-110 font-family-ancisar font-bold transition-all duration-500 ease-in-out"
+                >100 Da</span
+              >
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-2xl items-center flex flex-col justify-evenly shadow-md shadow-black w-[200px] m-5 h-[200px] p-5 transition-all ease-in-out duration-500 group hover:scale-110 hover:bg-amber-400"
+          >
+            <img
+              class="w-[100px]"
+              src="/public/assest/frites.png"
+              alt="gruyre"
+            />
+            <h4
+              class="text-2xl text-center text-gray-900 font-family-fredoka font-bold"
+            >
+              Frites
+            </h4>
+            <div
+              class="w-full h-fit p-1.5 flex flex-nowrap justify-center items-center gap-2.5"
+            >
+              <h5
+                class="text-lg text-gray-950 font-bold font-family-fredoka group-hover:text-cyan-600 group-hover:scale-110 transition-all duration-500 ease-in-out"
+              >
+                Price:
+              </h5>
+              <span
+                class="text-lg text-amber-400 group-hover:text-white group-hover:-rotate-12 group-hover:scale-110 font-family-ancisar font-bold transition-all duration-500 ease-in-out"
+                >100 Da</span
+              >
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-2xl items-center flex flex-col justify-evenly shadow-md shadow-black w-[200px] m-5 h-[200px] p-5 transition-all ease-in-out duration-500 group hover:scale-110 hover:bg-amber-400"
+          >
+            <img
+              class="w-[100px]"
+              src="/public/assest/fritefromage.png"
+              alt="fritefromage"
+            />
+            <h4
+              class="text-2xl text-center text-gray-900 font-family-fredoka font-bold"
+            >
+              Frites au F
+            </h4>
+            <div
+              class="w-full h-fit p-1.5 flex flex-nowrap justify-center items-center gap-2.5"
+            >
+              <h5
+                class="text-lg text-gray-950 font-bold font-family-fredoka group-hover:text-cyan-600 group-hover:scale-110 transition-all duration-500 ease-in-out"
+              >
+                Price:
+              </h5>
+              <span
+                class="text-lg text-amber-400 group-hover:text-white group-hover:-rotate-12 group-hover:scale-110 font-family-ancisar font-bold transition-all duration-500 ease-in-out"
+                >150 Da</span
+              >
+            </div>
+          </div>
+        </div>
+        <h4
+          class="text-4xl text-indigo-600 text-shadow-blue-300 text-center my-5 font-bold font-[system-ui,'sans_serif']"
+        >
+          Drinks:
+        </h4>
+        <div class="flex flex-wrap justify-around gap-5 items-center mb-[50px]">
+          <div
+            class="bg-[#f9ad4a63] rounded-2xl items-center flex flex-col justify-evenly shadow-[0px_0px_5px_5px] shadow-[#f9ad4a63] w-[200px] hover:shadow-[0px_0px_10px_5px] h-[280px] p-5 transition-all ease-in-out duration-500 group hover:scale-110"
+          >
+            <img src="/public/assest/Juice.png" alt="Juice" />
+            <h2 class="text-2xl font-bold font-family-josefin">Juice</h2>
+            <div class="w-full h-fit flex flex-col gap-2.5">
+              <div
+                class="w-full justify-between flex flex-nowrap items-center text-sm text-gray-500"
+              >
+                <p class="text-blue-400">1L</p>
+                <p class="text-blue-400">33cl</p>
+              </div>
+              <div
+                class="w-full justify-between flex flex-nowrap items-center text-sm text-gray-500"
+              >
+                <p class="text-blue-800 font-bold">150 Da</p>
+                <p class="text-blue-800 font-bold">60 Da</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-[#ff9dac] rounded-2xl items-center flex flex-col justify-evenly shadow-[0px_0px_5px_5px] shadow-[#ff9dac] w-[200px] hover:shadow-[0px_0px_10px_5px] h-[280px] p-5 transition-all ease-in-out duration-500 group hover:scale-110"
+          >
+            <img src="/public/assest/soda.png" alt="soda" />
+            <h2 class="text-2xl font-bold font-family-josefin">Soda</h2>
+            <div class="w-full h-fit flex flex-col gap-2.5">
+              <div
+                class="w-full justify-between flex flex-nowrap items-center text-sm text-gray-500"
+              >
+                <p class="text-blue-400">1L</p>
+                <p class="text-blue-400">33cl</p>
+              </div>
+              <div
+                class="w-full justify-between flex flex-nowrap items-center text-sm text-gray-500"
+              >
+                <p class="text-blue-800 font-bold">150 Da</p>
+                <p class="text-blue-800 font-bold">60 Da</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-[#b0deff] rounded-2xl items-center flex flex-col justify-evenly shadow-[0px_0px_5px_5px] shadow-[#b0deff] w-[200px] hover:shadow-[0px_0px_10px_5px] h-[280px] p-5 transition-all ease-in-out duration-500 group hover:scale-110"
+          >
+            <img src="/public/assest/water.png" alt="Juice" />
+            <h2 class="text-2xl font-bold font-family-josefin">Water</h2>
+            <div class="w-full h-fit flex flex-col gap-2.5">
+              <div
+                class="w-full justify-between flex flex-nowrap items-center text-sm text-gray-500"
+              >
+                <p class="text-blue-400">1L</p>
+                <p class="text-blue-400">33cl</p>
+              </div>
+              <div
+                class="w-full justify-between flex flex-nowrap items-center text-sm text-gray-500"
+              >
+                <p class="text-blue-800 font-bold">50 Da</p>
+                <p class="text-blue-800 font-bold">30 Da</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer
+        class="w-full h-fit p-2.5 text-2xl font-bold text-white text-center py-5 my-5"
+      >
+        Copy Rights &copy;
+        <a
+          href="index.html"
+          class="text-blue-200 hover:text-green-400 duration-500 transition-all ease-in-out font-family-fredoka"
+          >memes</a
+        >
+      </footer>
+    </div>
+
+    <script type="module" src="/src/menu.js"></script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

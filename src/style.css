@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-family-josefin: "Josefin Sans", sans-serif;
+  --font-family-ancisar: "Ancizar Sans", sans-serif;
+  --font-family-fredoka: "Fredoka", "sans-serif";
+  --animate-swipeleft: swipeleft 1.5s ease-in-out;
+  --animate-swiperight: swiperight 1.5s ease-in-out;
+  --animate-bingo: fadeOn 1s ease-in-out;
+
+  @keyframes swipeleft {
+    0% {
+      transform: translate(200%, 0%);
+      -webkit-transform: translate(200%, 0%);
+      -moz-transform: translate(200%, 0%);
+      -ms-transform: translate(200%, 0%);
+      -o-transform: translate(200%, 0%);
+    }
+    100% {
+      transform: translate(0%);
+      -webkit-transform: translate(0%);
+      -moz-transform: translate(0%);
+      -ms-transform: translate(0%);
+      -o-transform: translate(0%);
+    }
+  }
+  @keyframes swiperight {
+    0% {
+      transform: translate(-200%, 0%);
+      -webkit-transform: translate(-200%, 0%);
+      -moz-transform: translate(-200%, 0%);
+      -ms-transform: translate(-200%, 0%);
+      -o-transform: translate(-200%, 0%);
+    }
+    100% {
+      transform: translate(0%);
+      -webkit-transform: translate(0%);
+      -moz-transform: translate(0%);
+      -ms-transform: translate(0%);
+      -o-transform: translate(0%);
+    }
+  }
+  @keyframes fadeOn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
