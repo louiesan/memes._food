@@ -1,3 +1,5 @@
+import "./style.css";
+
 // Slider for Menu Page
 
 let pngArr = [
