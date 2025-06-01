@@ -23,9 +23,9 @@ function openNclose() {
 
 function change() {
   if (isOpen) {
-    menuImg.setAttribute("src", "./public/assest/close-menu.png");
+    menuImg.setAttribute("src", "/public/assest/close-menu.png");
   } else {
-    menuImg.setAttribute("src", "./public/assest/open-menu.png");
+    menuImg.setAttribute("src", "/public/assest/open-menu.png");
   }
 }
 
