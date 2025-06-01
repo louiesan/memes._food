@@ -1,27 +1,25 @@
-import "./style.css";
-
 // Slider for Menu Page
 
 let pngArr = [
   {
     food: "Pizza Marguerite",
     para: "A delicious classic made with rich tomato sauce, black olives, and melted cheese. Simple, tasty, and satisfying — all for just 300 DA!",
-    png: "../public/assest/margurite.png",
+    png: "./public/assest/margurite.png",
   },
   {
     food: "Burger Simple",
     para: "Savor the taste of our classic burger with a soft Biggy bun, fresh onion, crisp lettuce, juicy tomato, and a touch of VH sauce — all served with fruits on the side. Just 250 DA!",
-    png: "../public/assest/burgerSimple.png",
+    png: "./public/assest/burgerSimple.png",
   },
   {
     food: " Panini Kebab",
     para: "Grilled kebab wrapped in a crispy panini, stuffed with golden fries and melted cheese. A full-flavor bite for just 300 DA!",
-    png: "../public/assest/panini.png",
+    png: "./public/assest/panini.png",
   },
   {
     food: " Lebanese Kebab",
     para: "A delicious wrap filled with juicy kebab, crispy fries, and creamy cheese – inspired by Lebanese street flavors, only 350 DA!",
-    png: "../public/assest/Lebanese.png",
+    png: "./public/assest/Lebanese.png",
   },
 ];
 
